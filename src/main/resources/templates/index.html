@@ -2,8 +2,38 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Spring Cloud Config demo</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-Foo == <span th:text="${foo}"/>
+<table>
+    <thead>
+    <tr>
+        <td>Key</td>
+        <td>Value</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>message</td>
+        <td th:text="${message}"></td>
+    </tr>
+    <tr>
+        <td>jdbcUrl</td>
+        <td th:text="${jdbcUrl}"></td>
+    </tr>
+    <tr>
+        <td>jdbcUsername</td>
+        <td th:text="${jdbcUsername}"></td>
+    </tr>
+    <tr>
+        <td>jdbcPassword</td>
+        <td th:text="${jdbcPassword}"></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
