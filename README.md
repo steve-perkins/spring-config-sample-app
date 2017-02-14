@@ -39,3 +39,13 @@ gradlew bootRun -DVAULT_URL=http://127.0.0.1:8200 -DVAULT_USERNAME=vault_user -D
 
 * You can access the web application in your browser at: [http://localhost:8080](http://localhost:8080).
 
+* Make some changes to your properties, either in Git or in Vault.
+
+* Force the sample app to retrieve the latest properties on-the-fly without a restart, by hitting the `/refresh` 
+  endpoint with an empty POST request:
+  
+```
+curl -X POST http://localhost:8080/refresh
+```
+
+* Refresh the root page in your browser to verify that your update was received.
