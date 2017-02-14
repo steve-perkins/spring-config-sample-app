@@ -27,9 +27,9 @@ precedence whenever the same property is found in both.
 
 Setup
 =====
-1. Perform the steps described in the [spring-config-server](https://github.com/steve-perkins/spring-config-server) 
+* Perform the steps described in the [spring-config-server](https://github.com/steve-perkins/spring-config-server) 
    project README.
-2. This repo is a Gradle-based project, containing a [Spring Boot](https://projects.spring.io/spring-boot/)-based 
+* This repo is a Gradle-based project, containing a [Spring Boot](https://projects.spring.io/spring-boot/)-based 
    web app.  The Gradle script includes a `bootRun` task for conveniently launching the Spring Boot app.  When 
    calling this task, you'll need to pass JVM system properties needed by the client to reach Vault:
    
@@ -37,5 +37,5 @@ Setup
 gradlew bootRun -DVAULT_URL=http://127.0.0.1:8200 -DVAULT_USERNAME=vault_user -DVAULT_PASSWORD=vault_pass
 ```
 
-3. You can access the web application in your browser at: [http://localhost:8080](http://localhost:8080).
+* You can access the web application in your browser at: [http://localhost:8080](http://localhost:8080).
 
