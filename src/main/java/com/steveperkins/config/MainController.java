@@ -15,6 +15,12 @@ import java.util.Map;
 @RequestMapping("/")
 public class MainController {
 
+    /**
+     * For variables annotated with <code>@Value</code>, the Spring Cloud Config Client will auto-populate them
+     * with values obtained from the config server.  The key value on the left-hand side of the expression will
+     * be used (e.g. "message"), and the value on the right-hand side will be the default applied if no value is
+     * found (e.g. "Not found").
+     */
     @Value("${message:Not found}")
     private String message;
 
